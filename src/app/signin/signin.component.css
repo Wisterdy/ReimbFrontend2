@@ -1,0 +1,31 @@
+.sigincontainer{
+border-radius: 20px;
+height: 450px;
+margin-top:20vh;
+border-radius: 45px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+animation: borderanimation linear 4s infinite;
+
+}
+
+.sigincontainer input{
+    width: 50%;
+}
+
+.sigincontainer label{
+    color: #ffffff;
+}
+
+
+@keyframes borderanimation {
+    from {border-left: 1px solid rgb(124, 20, 209);  border-top: 2px solid red}
+    from {border-right: 1px solid orange;  border-bottom: 2px solid orange;}
+}
+
+
+#signinbutton{
+    margin-top: 15px;
+}
