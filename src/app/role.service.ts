@@ -7,7 +7,7 @@ import { UserRoles } from './models/UserRole';
   providedIn: 'root'
 })
 export class RoleService {
-
+//testing simple update
   url: string = " http://localhost:8082/UserRole";
   constructor(private httpclient: HttpClient) { }
 
