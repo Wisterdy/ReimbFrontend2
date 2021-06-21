@@ -1,0 +1,26 @@
+<div class="container ">
+    <div class="columns is-centered">
+        <div class="column has-background-dark is-12-mobile  is-6-desktop is-6-fullhd sigincontainer ">
+            <h1> SignUp</h1>
+
+            <label>Firstname</label>
+            <input class="input" [(ngModel)]='firstname' />
+            <label>Lastname</label>
+            <input class="input" [(ngModel)]='lastname' />
+            <label>Email</label>
+            <input class="input" [(ngModel)]='email' />
+            <label>Username</label>
+            <input class="input" [(ngModel)]='username' />
+            <label>Password</label>
+            <input class="input" [(ngModel)]='password' />
+
+            <Select (change)="selectRole($event)">
+                <option *ngFor="let role of roles" [value]="role.userRoleID">{{role.title}}</option>
+                
+            </Select>
+
+            <button id='signupbutton' class="button" (click)='signupuser()'>Signup</button>
+        </div>
+
+    </div>
+    <p>signup works!</p>
